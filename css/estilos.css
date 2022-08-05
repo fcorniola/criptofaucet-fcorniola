@@ -194,6 +194,20 @@ footer a{
     font-size: 20px;
 } /*Fin estilos formu*/
 
+/*Inicio animaciones*/
+.pulso {
+    animation: opacityPulse 2s ease-out;
+    animation-iteration-count: infinite; 
+    opacity: 1;
+}
+
+@-webkit-keyframes opacityPulse {
+    0% {opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {opacity: 0.0;}
+}
+/*Fin animaciones*/
+
 @media screen and (min-width: 480px) and (max-width: 1023px) {
     h1{  /*Estilos h1*/
         grid-area: titulo;
