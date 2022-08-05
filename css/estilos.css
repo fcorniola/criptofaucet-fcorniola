@@ -1,0 +1,273 @@
+/* Fuente desde fonts.google */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{ /*Reseteo de valores*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+body{ /*Estilos cuerpo*/
+    background-image: url(../img/fondoweb.webp);
+    width: 100%;
+    height: 100vh;
+} /*Fin cuerpo*/
+
+.grilla{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+        "titulo titulo titulo"
+        "menu menu menu"
+        "contenido . contenido"
+        "pie pie pie";
+    justify-content: center;
+    align-items: center;
+}
+
+.grilla2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "titulo titulo titulo"
+        "menu menu menu"
+        "contenido2 contenido2 contenido2"
+        "pie pie pie";
+    justify-content: center;
+    align-items: center;
+}
+
+header{  /*Estilos cabecera*/
+    text-align: center;
+    grid-column: span 3;
+} /*Fin cabecera*/
+
+h1{  /*Estilos h1*/
+    grid-area: titulo;
+    font-size: 50px;
+    color: aqua;
+    margin: 1%;
+    letter-spacing: 10px;
+    font-weight: bolder;
+    text-shadow: 0 0 4px white, 0 0 2px black;
+} /*Fin h1*/
+
+.menu{ /*Inicio estilos menu*/
+    background-color: aquamarine;
+    grid-area: menu;
+}
+
+.menu li{
+    display: inline;
+}
+
+.botonMenu{
+    text-decoration: none;
+    font-size: 25px;
+    background-color: aqua;
+    color: black;
+    border: solid 2px black;
+    padding-right:3%;
+    padding-left:3%;
+    margin: 2%;
+}
+
+.botonMenu:hover{
+    color:blanchedalmond;
+    background-color: black;
+} /*Fin estilos menu*/
+
+h2{ /*Estilos h1*/
+    font-size: 30px;
+    letter-spacing: 6px;
+    color: aqua;
+    text-shadow: 0 0 4px white, 0 0 2px black;
+    margin: 2%;
+    text-transform: uppercase;
+} /*Fin h2*/
+
+.principal{ /*Inicio estilos index*/
+    grid-area: contenido;
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+}
+
+.contenido{
+    width: 50%;
+    padding: 1%;
+    font-size: 20px;
+    float: left;
+    line-height: 30px;
+    color: aliceblue;
+    text-shadow: 0 0 3px aquamarine;
+}
+
+.contenido li{
+    list-style-type: none;
+} /*Fin estilos index*/
+
+footer{ /*Inicio estilos pie*/
+    grid-area: pie;
+    margin-top: 5px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+}
+
+footer a{
+    text-decoration: none;
+} /*Fin estilos pie*/
+
+.tutoriales{ /*Inicio estilos tutoriales*/
+    grid-area: contenido2;
+    text-align: center;
+    width: 75%;
+    color: white;
+    margin: auto;
+}
+
+.botonTuto{
+    text-decoration: none;
+    font-size: 15px;
+    background-color: aqua;
+    color: black;
+    border: solid 2px black;
+    margin: 5%;
+}
+
+.botonTuto:hover{
+    color:blanchedalmond;
+    background-color: black;
+} /*Fin estilos tutoriales*/
+
+.tareas{  /*Inicio estilos tareas*/
+    grid-area: contenido2;
+    grid-column: span 3;
+    width: 100%;
+    text-align: center;
+}
+
+.tareas table{
+    margin: auto;
+    color: white;
+    font-size: 20px;
+}
+
+.tareas a{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.tareas a:hover{
+    background-color: aquamarine;
+    color: black;
+}
+
+.tareas{
+    text-align: center;
+}
+
+.tareasLista{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 2px aquamarine;
+    font-size: 25px;
+    line-height: 40px;
+} /*Fin estilos tareas*/
+
+.formu{ /*Inicio estilos formu*/
+    grid-area: contenido2;
+    text-align: center;
+}
+
+.contacto{
+    text-align: center;
+    color: white;
+    text-shadow: 0 0 2px aquamarine;
+    font-size: 20px;
+} /*Fin estilos formu*/
+
+@media screen and (min-width: 480px) and (max-width: 1023px) {
+    h1{  /*Estilos h1*/
+        grid-area: titulo;
+        font-size: 20px;
+        color: aqua;
+        margin: 1%;
+        font-weight: bolder;
+    }
+    .botonMenu{
+        text-decoration: none;
+        font-size: 18px;
+        background-color: aqua;
+        color: black;
+        border: solid 2px black;
+        padding-right:1%;
+        padding-left:1%;
+        margin: 1%;
+    }
+    h2{ /*Estilos h1*/
+        font-size: 16px;
+        letter-spacing: 6px;
+        color: aqua;
+        text-shadow: 0 0 4px white, 0 0 2px black;
+        margin: 2%;
+        text-transform: uppercase;
+    }
+    p{
+        font-size: 14px;
+        line-height: 15px;
+    }
+    li{
+        font-size: 14px;
+        line-height: 15px;
+    }
+    img{
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    h1{  /*Estilos h1*/
+        grid-area: titulo;
+        font-size: 18px;
+        color: aqua;
+        margin: 1%;
+        font-weight: bolder;
+    }
+    .botonMenu{
+        text-decoration: none;
+        font-size: 12px;
+        background-color: aqua;
+        color: black;
+        border: solid 2px black;
+        padding-right:1%;
+        padding-left:1%;
+        margin: 1%;
+    }
+    h2{ /*Estilos h1*/
+        font-size: 15px;
+        letter-spacing: 6px;
+        color: aqua;
+        text-shadow: 0 0 4px white, 0 0 2px black;
+        margin: 2%;
+        text-transform: uppercase;
+    }
+    p{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    li{
+        font-size: 12px;
+        line-height: 15px;
+    }
+    img{
+        width: 100px;
+    }
+}
