@@ -1,0 +1,54 @@
+body {
+    background-image: url(../img/fondoweb.webp);
+    header {
+        border-bottom: solid 2px $celeste;
+        border-top: solid 2px $blanco;
+        h1{
+            letter-spacing: 5px;
+            color: $celeste;
+            font-weight: bold;
+        }
+        h2{
+            letter-spacing: 2px;
+            color: $celeste;
+            font-weight: bold;
+        }
+        .menu a {
+            font-size: $gd;
+            color: $celeste;
+            font-weight: bold;
+        }
+        .menu li :hover {
+            font-size: $gd;
+            background-color: $celeste;
+            color: $negro;
+        }
+    }
+    .contenido {
+            text-align: center;
+            font-size: $md;
+            color: $blanco;
+            &ul li{
+                list-style-type: none;
+            }
+    }
+    footer{
+        border-bottom: solid 2px $celeste;
+        border-top: solid 2px $celeste;
+        text-align: center;
+        font-size: $gd;
+        color: $celeste;
+        font-weight: bolder;
+    }
+}
+.pulso {
+    animation: opacityPulse 1s ease-out;
+    animation-iteration-count: infinite; 
+    opacity: 1;
+}
+
+@-webkit-keyframes opacityPulse {
+    0% {opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {opacity: 0.0;}
+}

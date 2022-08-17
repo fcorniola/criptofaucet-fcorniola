@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* colores */
+/* tamaños */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+body {
+  background-image: url(../img/fondoweb.webp);
+}
+body header {
+  border-bottom: solid 2px aquamarine;
+  border-top: solid 2px white;
+}
+body header h1 {
+  letter-spacing: 5px;
+  color: aquamarine;
+  font-weight: bold;
+}
+body header h2 {
+  letter-spacing: 2px;
+  color: aquamarine;
+  font-weight: bold;
+}
+body header .menu a {
+  font-size: 1.3rem;
+  color: aquamarine;
+  font-weight: bold;
+}
+body header .menu li :hover {
+  font-size: 1.3rem;
+  background-color: aquamarine;
+  color: black;
+}
+body .contenido {
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+}
+body .contenidoul li {
+  list-style-type: none;
+}
+body footer {
+  border-bottom: solid 2px aquamarine;
+  border-top: solid 2px aquamarine;
+  text-align: center;
+  font-size: 1.3rem;
+  color: aquamarine;
+  font-weight: bolder;
+}
+
+.pulso {
+  animation: opacityPulse 1s ease-out;
+  animation-iteration-count: infinite;
+  opacity: 1;
+}
+
+@-webkit-keyframes opacityPulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*# sourceMappingURL=estilos2.css.map */
